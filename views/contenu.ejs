@@ -1,0 +1,23 @@
+
+    <% if (id === -1) { %>
+        <ul>
+            <p>Aucun utilisateur</p>
+        </ul>
+    <% } else { %>
+        <div class="card text-center">
+            <div class="card-header">
+                <%= users[id].name %> 
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> <%= users[id].balance %> </h5>
+              <p class="card-text"> <%= users[id].email %> .</p>
+              <a href="#" class="btn btn-primary"> <%= users[id].age %> </a>
+            </div>
+            <div class="card-footer text-muted">
+                <%= users[id].gender %> 
+            </div>
+          </div>
+        <p> </p>
+    <% } %>
+ 
+
