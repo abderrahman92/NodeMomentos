@@ -5,7 +5,7 @@ JSON.stringify(data)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { 'users': data });
+  res.render('index', { 'users': data,'id':-1 });
 });
 
 
